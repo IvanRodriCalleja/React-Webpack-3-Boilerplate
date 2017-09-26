@@ -1,0 +1,30 @@
+{
+    "name": "react-redux-webpack3-starter",
+    "version": "1.0.0",
+    "description": "react, redux, react router, webpack 3 starter project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url":
+            "git+https://github.com/IvanRodriCalleja/React-Webpack-3-Boilerplate.git"
+    },
+    "author": "IvanRodriCalleja",
+    "license": "ISC",
+    "bugs": {
+        "url":
+            "https://github.com/IvanRodriCalleja/React-Webpack-3-Boilerplate/issues"
+    },
+    "homepage":
+        "https://github.com/IvanRodriCalleja/React-Webpack-3-Boilerplate#readme",
+    "dependencies": {
+        "react": "next",
+        "react-dom": "next",
+        "react-redux": "^5.0.6",
+        "react-router-dom": "^4.2.2",
+        "react-router-redux": "next",
+        "redux": "^3.7.2"
+    }
+}
