@@ -4,7 +4,9 @@
     "description": "react, redux, react router, webpack 3 starter project",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server --env dev",
+        "prod": "webpack --env prod"
     },
     "repository": {
         "type": "git",
@@ -26,5 +28,11 @@
         "react-router-dom": "^4.2.2",
         "react-router-redux": "next",
         "redux": "^3.7.2"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "2.30.1",
+        "webpack": "3.5.5",
+        "webpack-dev-server": "2.7.1",
+        "webpack-merge": "4.1.0"
     }
 }
