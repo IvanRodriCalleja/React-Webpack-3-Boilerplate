@@ -1,6 +1,7 @@
 const merge = require("webpack-merge");
-const { devServer } = require('./config');
+const { devServer, hotModuleLoader } = require('./config');
 
 module.exports = merge([
-    devServer()
+    devServer(),
+    hotModuleLoader()
 ]);
