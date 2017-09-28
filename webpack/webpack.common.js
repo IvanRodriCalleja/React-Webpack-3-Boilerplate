@@ -1,5 +1,5 @@
 const PATHS = require("./paths");
-const { htmlWebpackPlugin } = require("./config");
+const { htmlWebpackPlugin, jsLoader } = require("./config");
 
 const plugins = [
     htmlWebpackPlugin({ template: PATHS.indexTemplate })
@@ -13,6 +13,11 @@ module.exports = {
     },
     resolve: {
         extensions: [".js", ".jsx"]
+    },
+    module: {
+        rules: [
+            jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] })
+        ]
     },
     plugins: plugins
 }
