@@ -6,7 +6,6 @@ const plugins = [
 ];
 
 module.exports = {
-    entry: PATHS.appFolder,
     output: {
         path: PATHS.outputFolder,
         filename: "[name].[hash].js"
