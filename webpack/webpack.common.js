@@ -1,5 +1,5 @@
 const PATHS = require("./paths");
-const { htmlWebpackPlugin, jsLoader } = require("./config");
+const { htmlWebpackPlugin, jsLoader, imgLoader } = require("./config");
 
 const plugins = [
     htmlWebpackPlugin({ template: PATHS.indexTemplate })
@@ -15,7 +15,8 @@ module.exports = {
     },
     module: {
         rules: [
-            jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] })
+            jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
+            imgLoader({ exclude: [/node_modules/, /\**\icons\**/] }),
         ]
     },
     plugins: plugins
