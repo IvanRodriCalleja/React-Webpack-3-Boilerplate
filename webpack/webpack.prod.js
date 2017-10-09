@@ -2,7 +2,7 @@ const merge = require("webpack-merge");
 const PATHS = require("./paths");
 const webpack = require("webpack");
 
-const { sourceMap } = require("./config");
+const { sourceMap, imgMinify } = require("./config");
 
 module.exports = merge([
     {
@@ -12,7 +12,10 @@ module.exports = merge([
                 name: "vendor",
                 minChunks: ({ resource }) => /node_modules/.test(resource)
             })
-        ]
+        ],
+        module: {
+            rules: [imgMinify()]
+        }
     },
     sourceMap({ sourceMapType: "source-map" })
 ]);
