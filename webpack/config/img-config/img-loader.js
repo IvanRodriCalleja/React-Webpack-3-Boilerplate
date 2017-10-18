@@ -1,13 +1,17 @@
-module.exports = ({ include, exclude } = {}) => {
-    return {
-        include,
-        exclude,
-        test: /\.(png|jpg|svg|gif)$/,
-        use: {
-            loader: "file-loader",
-            options: {
-                name: "imgs/[name].[hash].[ext]"
+module.exports = ({ include, exclude } = {}) => ({
+    module: {
+        rules: [
+            {
+                include,
+                exclude,
+                test: /\.(png|jpg|svg|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "imgs/[name].[hash].[ext]"
+                    }
+                }
             }
-        }
-    };
-};
+        ]
+    }
+});

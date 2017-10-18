@@ -39,6 +39,7 @@
         "html-webpack-plugin": "2.30.1",
         "image-webpack-loader": "^3.4.2",
         "react-hot-loader": "3.0.0-beta.6",
+        "svg-sprite-loader": "^3.2.6",
         "webpack": "3.5.5",
         "webpack-dev-server": "2.7.1",
         "webpack-merge": "4.1.0"

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import reactImg from './react.png'
+import catImg from './cat.png';
+import Icon from '../shared/icon/icon'
+import employeeIcon from './icons/employee.svg';
 
 class App extends Component {
     render() {
@@ -7,7 +9,8 @@ class App extends Component {
             <div>
                 <h1>React Webpack 3 starter</h1>
                 <span>App</span>
-                <img src={reactImg} alt='react image' />
+                <Icon svgIcon={employeeIcon} title='Employee Icon' />
+                <img src={catImg} alt='react image' />
             </div>
         );
     }

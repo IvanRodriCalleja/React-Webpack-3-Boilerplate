@@ -3,7 +3,6 @@ module.exports = ({host, port} = {}) => {
         devServer: {
             host,
             port,
-            hot:true,
             historyApiFallback: true,
             open: true,
             stats: 'errors-only',

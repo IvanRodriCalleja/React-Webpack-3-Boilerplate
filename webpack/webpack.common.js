@@ -1,23 +1,37 @@
+const merge = require("webpack-merge");
 const PATHS = require("./paths");
-const { htmlWebpackPlugin, jsLoader, imgLoader } = require("./config");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
+const { htmlWebpackPlugin, jsLoader, imgLoader, svgSpriteLoader } = require("./config");
 
-const plugins = [
-    htmlWebpackPlugin({ template: PATHS.indexTemplate })
-];
-
-module.exports = {
-    output: {
-        path: PATHS.outputFolder,
-        filename: "[name].[hash].js"
+console.log("yeeee", merge([
+    {
+        output: {
+            path: PATHS.outputFolder,
+            filename: "[name].[hash].js"
+        },
+        resolve: {
+            extensions: [".js", ".jsx"]
+        },        
     },
-    resolve: {
-        extensions: [".js", ".jsx"]
+    jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
+    imgLoader({ exclude: [/node_modules/, /\**\icons\**/] }),
+    svgSpriteLoader({ include: /\**\icons\**/ }),
+    htmlWebpackPlugin({ template: PATHS.indexTemplate }),
+    
+]))
+module.exports = merge([
+    {
+        output: {
+            path: PATHS.outputFolder,
+            filename: "[name].[hash].js"
+        },
+        resolve: {
+            extensions: [".js", ".jsx"]
+        },        
     },
-    module: {
-        rules: [
-            jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
-            imgLoader({ exclude: [/node_modules/, /\**\icons\**/] }),
-        ]
-    },
-    plugins: plugins
-}
+    jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
+    imgLoader({ exclude: [/node_modules/, /\**\icons\**/] }),
+    svgSpriteLoader({ include: /\**\icons\**/ }),
+    htmlWebpackPlugin({ template: PATHS.indexTemplate }),
+    
+]);

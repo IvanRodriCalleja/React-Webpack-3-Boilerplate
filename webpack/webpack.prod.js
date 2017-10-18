@@ -13,9 +13,7 @@ module.exports = merge([
                 minChunks: ({ resource }) => /node_modules/.test(resource)
             })
         ],
-        module: {
-            rules: [imgMinify()]
-        }
     },
-    sourceMap({ sourceMapType: "source-map" })
+    sourceMap({ sourceMapType: "source-map" }),
+    imgMinify()
 ]);
