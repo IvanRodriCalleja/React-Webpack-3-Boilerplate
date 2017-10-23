@@ -7,12 +7,6 @@ const { sourceMap, imgMinify } = require("./config");
 module.exports = merge([
     {
         entry: PATHS.appFolder,
-        plugins: [
-            new webpack.optimize.CommonsChunkPlugin({
-                name: "vendor",
-                minChunks: ({ resource }) => /node_modules/.test(resource)
-            })
-        ],
     },
     sourceMap({ sourceMapType: "source-map" }),
     imgMinify()

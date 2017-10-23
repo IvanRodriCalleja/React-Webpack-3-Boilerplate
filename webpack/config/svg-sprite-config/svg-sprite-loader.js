@@ -5,12 +5,13 @@ module.exports = ({ include, exclude } = {}) =>({
     module: {
         rules: [
             {
+                include,
+                exclude,
                 test: /\.svg$/,
                 loader: "svg-sprite-loader",
-                include,
                 options: {
                     extract: true,
-                    spriteFilename: "icons-sprite.svg"
+                    spriteFilename: "./svgSprite/images.svg"
                 }
             }
         ]

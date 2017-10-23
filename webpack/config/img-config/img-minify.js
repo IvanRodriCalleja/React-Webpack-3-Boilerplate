@@ -1,4 +1,4 @@
-module.exports = ({ gifsicle, mozjpeg, pngquant, svgo, webp } = {}) => {
+module.exports = ({ gifsicle, mozjpeg, pngquant, webp } = {}) => {
         
     const gifsicleDefault = {
         interlaced: true,
@@ -14,29 +14,18 @@ module.exports = ({ gifsicle, mozjpeg, pngquant, svgo, webp } = {}) => {
     const webpDefault = {
         quality: 100
     };
-    const svgoDefault = {
-        plugins: [
-            {
-                removeViewBox: false
-            },
-            {
-                removeEmptyAttrs: false
-            }
-        ]
-    };
 
     return {
         module: {
             rules: [ 
                 {
-                    test: /\.(gif|png|jpe?g|svg|webp)$/i,
+                    test: /\.(gif|png|jpe?g|webp)$/i,
                     use: {
                         loader: "image-webpack-loader",
                         options: {
                             gifsicle: Object.assign(gifsicleDefault, gifsicle, {}),
                             mozjpeg: Object.assign(mozjpegDefault, mozjpeg, {}),
                             pngquant: Object.assign(pngquantDefault, pngquant, {}),
-                            svgo: Object.assign(svgoDefault, svgo, {}),
                             webp: Object.assign(webpDefault, webp, {})
                         }
                     }
