@@ -21,7 +21,7 @@ module.exports = ({ gifsicle, mozjpeg, pngquant, webp } = {}) => {
                 {
                     test: /\.(gif|png|jpe?g|webp)$/i,
                     use: {
-                        loader: "image-webpack-loader",
+                        loader: 'image-webpack-loader',
                         options: {
                             gifsicle: Object.assign(gifsicleDefault, gifsicle, {}),
                             mozjpeg: Object.assign(mozjpegDefault, mozjpeg, {}),

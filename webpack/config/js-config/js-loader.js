@@ -3,7 +3,7 @@ module.exports = ({ include, exclude } = {}) => ({
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 include,
                 exclude,
                 options: {

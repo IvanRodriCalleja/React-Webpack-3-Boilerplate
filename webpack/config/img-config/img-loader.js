@@ -6,9 +6,9 @@ module.exports = ({ include, exclude } = {}) => ({
                 exclude,
                 test: /\.(png|jpg|gif)$/,
                 use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
-                        name: "imgs/[name].[hash].[ext]"
+                        name: 'imgs/[name].[hash].[ext]'
                     }
                 }
             }

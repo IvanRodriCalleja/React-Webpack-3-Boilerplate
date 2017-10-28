@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import catImg from './cat.png';
 import Icon from '../shared/icon/icon'
 import employeeIcon from './icons/employee.svg';

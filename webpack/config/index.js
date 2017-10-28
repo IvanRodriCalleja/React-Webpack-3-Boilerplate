@@ -1,6 +1,7 @@
 module.exports = {
     chunkSplitter: require('./bundle-config/chunk-splitter'),
     devServer: require('./devServer-config/devServer'),
+    fontsLoader: require('./fonts-config/fonts-loader'),
     hotModuleLoader: require('./hotModule-cofig/hotModule-config'),
     htmlWebpackPlugin: require('./html-config/html-plugin'),
     imgLoader: require('./img-config/img-loader'),
