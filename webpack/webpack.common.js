@@ -7,12 +7,16 @@ const {
     imgLoader, 
     svgSpriteLoader,
     chunkSplitter,
-    fontLoader 
+    fontLoader,
+    styleLoader 
 } = require('./config');
 
 
 module.exports = merge([
     {
+        entry: [
+            PATHS.appFolder
+        ],
         output: {
             path: PATHS.outputFolder,
             filename: '[name].[hash].js'
@@ -31,6 +35,7 @@ module.exports = merge([
             name: 'vendor',
             minChunks: ({ resource }) => /node_modules/.test(resource)
         }
-    ])
+    ]),
+    styleLoader()
     
 ]);

@@ -1,0 +1,13 @@
+img {
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+
+    div{
+        flex: 0 0 33%;
+    }
+}

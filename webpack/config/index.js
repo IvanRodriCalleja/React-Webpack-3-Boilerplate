@@ -9,5 +9,6 @@ module.exports = {
     imgMinify: require('./img-config/img-minify'),
     jsLoader: require('./js-config/js-loader'),
     sourceMap: require('./sourceMap-config/sourceMaps'),
+    styleLoader: require('./style-config/style-loader'),
     svgSpriteLoader: require('./svg-sprite-config/svg-sprite-loader')
 };
