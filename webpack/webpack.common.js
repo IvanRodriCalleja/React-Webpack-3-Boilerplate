@@ -7,7 +7,7 @@ const {
     imgLoader, 
     svgSpriteLoader,
     chunkSplitter,
-    fontsLoader 
+    fontLoader 
 } = require('./config');
 
 
@@ -24,7 +24,7 @@ module.exports = merge([
     jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
     imgLoader({ exclude: /node_modules/ }),
     svgSpriteLoader(),
-    fontsLoader(),
+    fontLoader(),
     htmlWebpackPlugin({ template: PATHS.indexTemplate }),
     chunkSplitter([
         {
