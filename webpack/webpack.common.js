@@ -7,8 +7,7 @@ const {
     imgLoader, 
     svgSpriteLoader,
     chunkSplitter,
-    fontLoader,
-    styleLoader 
+    fontLoader
 } = require('./config');
 
 
@@ -35,7 +34,5 @@ module.exports = merge([
             name: 'vendor',
             minChunks: ({ resource }) => /node_modules/.test(resource)
         }
-    ]),
-    styleLoader()
-    
+    ]), 
 ]);
