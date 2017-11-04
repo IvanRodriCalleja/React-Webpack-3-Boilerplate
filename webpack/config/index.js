@@ -1,5 +1,6 @@
 module.exports = {
     chunkSplitter: require('./bundle-config/chunk-splitter'),
+    cleaner: require('./cleaner-config/cleaner'),
     cssAutoprefix: require('./css-config/css-autoprefix'),
     cssExtract: require('./css-config/css-extract'),
     cssLoader: require('./css-config/css-loader'),

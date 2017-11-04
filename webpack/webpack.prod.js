@@ -13,11 +13,13 @@ const {
     cssMinify,
     chunkSplitter,
     enviromentVariable,
-    jsMinify
+    jsMinify,
+    cleaner
  } = require('./config');
 
 module.exports = merge([
     sourceMap({ sourceMapType: 'source-map' }),
+    cleaner(),
     enviromentVariable(),
     chunkSplitter([
         {
