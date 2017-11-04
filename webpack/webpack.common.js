@@ -6,16 +6,15 @@ const {
     jsLoader, 
     imgLoader, 
     svgSpriteLoader,
-    chunkSplitter,
     fontLoader
 } = require('./config');
 
 
 module.exports = merge([
     {
-        entry: [
-            PATHS.appFolder
-        ],
+        entry: {
+            ['app']: [PATHS.appFolder]
+        },
         output: {
             path: PATHS.outputFolder,
             filename: '[name].[hash].js'
@@ -28,11 +27,5 @@ module.exports = merge([
     imgLoader({ exclude: /node_modules/ }),
     svgSpriteLoader(),
     fontLoader(),
-    htmlWebpackPlugin({ template: PATHS.indexTemplate }),
-    chunkSplitter([
-        {
-            name: 'vendor',
-            minChunks: ({ resource }) => /node_modules/.test(resource)
-        }
-    ]), 
+    htmlWebpackPlugin({ template: PATHS.indexTemplate }), 
 ]);

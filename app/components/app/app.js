@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import catImg from './cat.png';
 import Icon from '../shared/icon/icon'
 import employeeIcon from './icons/employee.svg';
-import appStyles from './app.scss'
+import appStyles from './app.scss';
 
 class App extends Component {
     render() {

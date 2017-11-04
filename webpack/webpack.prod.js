@@ -2,11 +2,30 @@ const merge = require('webpack-merge');
 const PATHS = require('./paths');
 const webpack = require('webpack');
 const glob = require('glob');
+const CompresionPlugin = require('compression-webpack-plugin');
 
-const { sourceMap, imgMinify, fontMin, cssExtract, cssAutoprefix, cssMinify } = require('./config');
+const { 
+    sourceMap, 
+    imgMinify, 
+    fontMin, 
+    cssExtract, 
+    cssAutoprefix, 
+    cssMinify,
+    chunkSplitter,
+    enviromentVariable,
+    jsMinify
+ } = require('./config');
 
 module.exports = merge([
     sourceMap({ sourceMapType: 'source-map' }),
+    enviromentVariable(),
+    chunkSplitter([
+        {
+            name: 'vendor',
+            minChunks: ({ resource }) => /node_modules/.test(resource)
+        }
+    ]),
+    jsMinify(),
     imgMinify(),
     fontMin(),
     cssExtract({ use: [
