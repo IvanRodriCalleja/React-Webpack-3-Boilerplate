@@ -13,6 +13,7 @@ module.exports = {
     htmlWebpackPlugin: require('./html-config/html-plugin'),
     imgLoader: require('./img-config/img-loader'),
     imgMinify: require('./img-config/img-minify'),
+    jsLinter: require('./lint-config/js-linter'),
     jsLoader: require('./js-config/js-loader'),
     jsMinify: require('./js-config/js-minify'),
     sourceMap: require('./sourceMap-config/sourceMaps'),

@@ -1,12 +1,12 @@
 const merge = require('webpack-merge');
 const PATHS = require('./paths');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const { 
     htmlWebpackPlugin, 
     jsLoader, 
     imgLoader, 
     svgSpriteLoader,
-    fontLoader
+    fontLoader,
+    jsLinter
 } = require('./config');
 
 
@@ -23,6 +23,7 @@ module.exports = merge([
             extensions: ['.js', '.jsx']
         },        
     },
+    jsLinter(),
     jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
     imgLoader({ exclude: /node_modules/ }),
     svgSpriteLoader(),
