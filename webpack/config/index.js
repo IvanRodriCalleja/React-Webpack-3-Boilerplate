@@ -3,6 +3,7 @@ module.exports = {
     cleaner: require('./cleaner-config/cleaner'),
     cssAutoprefix: require('./css-config/css-autoprefix'),
     cssExtract: require('./css-config/css-extract'),
+    cssLinter: require('./lint-config/css-linter'),
     cssLoader: require('./css-config/css-loader'),
     cssMinify: require('./css-config/css-minify'),
     devServer: require('./devServer-config/devServer'),

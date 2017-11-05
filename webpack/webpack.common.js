@@ -6,7 +6,8 @@ const {
     imgLoader, 
     svgSpriteLoader,
     fontLoader,
-    jsLinter
+    jsLinter,
+    cssLinter
 } = require('./config');
 
 
@@ -24,6 +25,7 @@ module.exports = merge([
         },        
     },
     jsLinter(),
+    cssLinter(),
     jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
     imgLoader({ exclude: /node_modules/ }),
     svgSpriteLoader(),
