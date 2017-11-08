@@ -13,9 +13,6 @@ const {
 
 module.exports = merge([
     {
-        entry: {
-            ['app']: [PATHS.appFolder]
-        },
         output: {
             path: PATHS.outputFolder,
             filename: '[name].[hash].js'

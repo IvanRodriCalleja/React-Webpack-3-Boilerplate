@@ -1,4 +1,5 @@
 module.exports = {
+    bundleMonitor: require('./webpack-monitor/bundle-monitor'),
     chunkSplitter: require('./bundle-config/chunk-splitter'),
     cleaner: require('./cleaner-config/cleaner'),
     cssAutoprefix: require('./css-config/css-autoprefix'),

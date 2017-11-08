@@ -6,7 +6,10 @@ module.exports = () => ({
     plugins: [
         new CleanWebpackPlugin(
             [PATHS.outputFolder], 
-            { root: path.resolve(__dirname , '/') }
+            { 
+                root: path.resolve(__dirname , '/'),
+                exclude:  ['./monitor/myStatsStore.json'], 
+            }
         )
     ]
 })

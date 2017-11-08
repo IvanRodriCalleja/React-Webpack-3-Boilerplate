@@ -1,10 +1,9 @@
 const merge = require('webpack-merge');
 const PATHS = require('./paths');
-const webpack = require('webpack');
 const glob = require('glob');
-const CompresionPlugin = require('compression-webpack-plugin');
 
 const { 
+    bundleMonitor,
     sourceMap, 
     imgMinify, 
     fontMin, 
@@ -18,6 +17,11 @@ const {
  } = require('./config');
 
 module.exports = merge([
+    {
+        entry: {
+            app: PATHS.appFolder       
+        }
+    },
     sourceMap({ sourceMapType: 'source-map' }),
     cleaner(),
     enviromentVariable(),
@@ -42,5 +46,6 @@ module.exports = merge([
         cssAutoprefix(),
         'sass-loader'
     ]}),
-    cssMinify({ paths: glob.sync(`${PATHS.appFolder}/**/*.js`) })
+    cssMinify({ paths: glob.sync(`${PATHS.appFolder}/**/*.js`) }),
+    bundleMonitor()
 ]);
