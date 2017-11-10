@@ -1,11 +1,12 @@
-module.exports = ({host, port} = {}) => {
+module.exports = ({host, port, stats, open} = {}) => {
     return {
         devServer: {
             host,
             port,
+            stats,
+            open,
+            inline: true,
             historyApiFallback: true,
-            open: true,
-            stats: 'errors-only',
             overlay: {
                 errors: true,
                 warnings: true,

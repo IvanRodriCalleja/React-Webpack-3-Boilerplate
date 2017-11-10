@@ -2,10 +2,10 @@ module.exports = ({ include, exclude } = {}) => ({
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                loader: 'babel-loader',
                 include,
                 exclude,
+                test: /\.(js|jsx)$/,
+                loader: 'babel-loader',
                 options: {
                     cacheDirectory: true
                 }

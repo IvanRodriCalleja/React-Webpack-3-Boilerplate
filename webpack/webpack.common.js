@@ -22,10 +22,10 @@ module.exports = merge([
         },        
     },
     jsLinter(),
-    cssLinter(),
+    cssLinter({ include: PATHS.appFolder }),
     jsLoader({ include: PATHS.appFolder, exclude: [/node_modules/] }),
     imgLoader({ exclude: /node_modules/ }),
-    svgSpriteLoader(),
+    svgSpriteLoader({ spriteFilename: './svgSprite/images.svg' }),
     fontLoader(),
     htmlWebpackPlugin({ template: PATHS.indexTemplate }), 
 ]);

@@ -1,0 +1,434 @@
+[
+  {
+    "timeStamp": 1510128357617,
+    "time": 10693,
+    "hash": "0ab4f50faf09fdcdabb1",
+    "errors": [],
+    "size": 429606,
+    "assets": [
+      {
+        "name": "imgs/cat.a269608f8b3e8dc6b5333dd7829e1885.png",
+        "chunks": [],
+        "size": 301168
+      },
+      {
+        "name": "app.0ab4f50faf09fdcdabb1.js",
+        "chunks": [
+          0
+        ],
+        "size": 4135,
+        "minified": true
+      },
+      {
+        "name": "vendor.0ab4f50faf09fdcdabb1.js",
+        "chunks": [
+          1
+        ],
+        "size": 121781,
+        "minified": true
+      },
+      {
+        "name": "./svgSprite/images.svg",
+        "chunks": [],
+        "size": 1741
+      },
+      {
+        "name": "./styles/app.7792e449.css",
+        "chunks": [
+          0
+        ],
+        "size": 309
+      },
+      {
+        "name": "./styles/app.7792e449.css.map",
+        "chunks": [
+          0
+        ],
+        "size": 102
+      },
+      {
+        "name": "index.html",
+        "chunks": [],
+        "size": 370
+      }
+    ],
+    "chunks": [
+      {
+        "size": 8070,
+        "files": [
+          "app.0ab4f50faf09fdcdabb1.js",
+          "./styles/app.7792e449.css",
+          "./styles/app.7792e449.css.map"
+        ],
+        "modules": [
+          {
+            "name": "./app/index.js",
+            "size": 587,
+            "id": 5
+          },
+          {
+            "name": "./app/components/app/app.js",
+            "size": 4187,
+            "id": 17
+          },
+          {
+            "name": "./app/components/app/cat.png",
+            "size": 91,
+            "id": 18
+          },
+          {
+            "name": "./app/components/shared/icon/icon.js",
+            "size": 2905,
+            "id": 19
+          },
+          {
+            "name": "./app/components/app/icons/employee.svg",
+            "size": 221,
+            "id": 20
+          },
+          {
+            "name": "./app/components/app/app.scss",
+            "size": 79,
+            "id": 21
+          }
+        ]
+      },
+      {
+        "size": 143490,
+        "files": [
+          "vendor.0ab4f50faf09fdcdabb1.js"
+        ],
+        "modules": [
+          {
+            "name": "./node_modules/react/index.js",
+            "size": 190,
+            "id": 0
+          },
+          {
+            "name": "./node_modules/fbjs/lib/emptyFunction.js",
+            "size": 959,
+            "id": 1
+          },
+          {
+            "name": "./node_modules/object-assign/index.js",
+            "size": 2108,
+            "id": 2
+          },
+          {
+            "name": "./node_modules/fbjs/lib/emptyObject.js",
+            "size": 332,
+            "id": 3
+          },
+          {
+            "name": "./node_modules/fbjs/lib/invariant.js",
+            "size": 1506,
+            "id": 4
+          },
+          {
+            "name": "./node_modules/react/cjs/react.production.min.js",
+            "size": 5739,
+            "id": 6
+          },
+          {
+            "name": "./node_modules/react-dom/index.js",
+            "size": 1363,
+            "id": 7
+          },
+          {
+            "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+            "size": 108217,
+            "id": 8
+          },
+          {
+            "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+            "size": 935,
+            "id": 9
+          },
+          {
+            "name": "./node_modules/fbjs/lib/EventListener.js",
+            "size": 2248,
+            "id": 10
+          },
+          {
+            "name": "./node_modules/fbjs/lib/shallowEqual.js",
+            "size": 1616,
+            "id": 11
+          },
+          {
+            "name": "./node_modules/fbjs/lib/containsNode.js",
+            "size": 923,
+            "id": 12
+          },
+          {
+            "name": "./node_modules/fbjs/lib/isTextNode.js",
+            "size": 479,
+            "id": 13
+          },
+          {
+            "name": "./node_modules/fbjs/lib/isNode.js",
+            "size": 702,
+            "id": 14
+          },
+          {
+            "name": "./node_modules/fbjs/lib/focusNode.js",
+            "size": 578,
+            "id": 15
+          },
+          {
+            "name": "./node_modules/fbjs/lib/getActiveElement.js",
+            "size": 912,
+            "id": 16
+          },
+          {
+            "name": "./node_modules/style-loader/lib/urls.js",
+            "size": 3008,
+            "id": 22
+          },
+          {
+            "name": "./node_modules/css-loader/lib/css-base.js",
+            "size": 2260,
+            "id": 23
+          },
+          {
+            "name": "./node_modules/style-loader/lib/addStyles.js",
+            "size": 9415,
+            "id": 24
+          }
+        ]
+      },
+      {
+        "size": 0,
+        "files": [
+          "./svgSprite/images.svg"
+        ],
+        "modules": []
+      }
+    ],
+    "pureCssSize": 366,
+    "unPureCssSize": 309
+  },
+  {
+    "timeStamp": 1510301478892,
+    "time": 11616,
+    "hash": "0ab4f50faf09fdcdabb1",
+    "errors": [],
+    "size": 915000,
+    "assets": [
+      {
+        "name": "imgs/cat.a269608f8b3e8dc6b5333dd7829e1885.png",
+        "chunks": [],
+        "size": 301168
+      },
+      {
+        "name": "app.0ab4f50faf09fdcdabb1.js",
+        "chunks": [
+          0
+        ],
+        "size": 4188,
+        "minified": true
+      },
+      {
+        "name": "vendor.0ab4f50faf09fdcdabb1.js",
+        "chunks": [
+          1
+        ],
+        "size": 121837,
+        "minified": true
+      },
+      {
+        "name": "./svgSprite/images.svg",
+        "chunks": [],
+        "size": 1741
+      },
+      {
+        "name": "./styles/app.7792e449.css",
+        "chunks": [
+          0
+        ],
+        "size": 309
+      },
+      {
+        "name": "app.0ab4f50faf09fdcdabb1.js.map",
+        "chunks": [
+          0
+        ],
+        "size": 16630
+      },
+      {
+        "name": "./styles/app.7792e449.css.map",
+        "chunks": [
+          0
+        ],
+        "size": 102
+      },
+      {
+        "name": "vendor.0ab4f50faf09fdcdabb1.js.map",
+        "chunks": [
+          1
+        ],
+        "size": 468655
+      },
+      {
+        "name": "index.html",
+        "chunks": [],
+        "size": 370
+      }
+    ],
+    "chunks": [
+      {
+        "size": 8070,
+        "files": [
+          "app.0ab4f50faf09fdcdabb1.js",
+          "./styles/app.7792e449.css",
+          "app.0ab4f50faf09fdcdabb1.js.map",
+          "./styles/app.7792e449.css.map"
+        ],
+        "modules": [
+          {
+            "name": "./app/index.js",
+            "size": 587,
+            "id": 5
+          },
+          {
+            "name": "./app/components/app/app.js",
+            "size": 4187,
+            "id": 17
+          },
+          {
+            "name": "./app/components/app/cat.png",
+            "size": 91,
+            "id": 18
+          },
+          {
+            "name": "./app/components/shared/icon/icon.js",
+            "size": 2905,
+            "id": 19
+          },
+          {
+            "name": "./app/components/app/icons/employee.svg",
+            "size": 221,
+            "id": 20
+          },
+          {
+            "name": "./app/components/app/app.scss",
+            "size": 79,
+            "id": 21
+          }
+        ]
+      },
+      {
+        "size": 143490,
+        "files": [
+          "vendor.0ab4f50faf09fdcdabb1.js",
+          "vendor.0ab4f50faf09fdcdabb1.js.map"
+        ],
+        "modules": [
+          {
+            "name": "./node_modules/react/index.js",
+            "size": 190,
+            "id": 0
+          },
+          {
+            "name": "./node_modules/fbjs/lib/emptyFunction.js",
+            "size": 959,
+            "id": 1
+          },
+          {
+            "name": "./node_modules/object-assign/index.js",
+            "size": 2108,
+            "id": 2
+          },
+          {
+            "name": "./node_modules/fbjs/lib/emptyObject.js",
+            "size": 332,
+            "id": 3
+          },
+          {
+            "name": "./node_modules/fbjs/lib/invariant.js",
+            "size": 1506,
+            "id": 4
+          },
+          {
+            "name": "./node_modules/react/cjs/react.production.min.js",
+            "size": 5739,
+            "id": 6
+          },
+          {
+            "name": "./node_modules/react-dom/index.js",
+            "size": 1363,
+            "id": 7
+          },
+          {
+            "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+            "size": 108217,
+            "id": 8
+          },
+          {
+            "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+            "size": 935,
+            "id": 9
+          },
+          {
+            "name": "./node_modules/fbjs/lib/EventListener.js",
+            "size": 2248,
+            "id": 10
+          },
+          {
+            "name": "./node_modules/fbjs/lib/shallowEqual.js",
+            "size": 1616,
+            "id": 11
+          },
+          {
+            "name": "./node_modules/fbjs/lib/containsNode.js",
+            "size": 923,
+            "id": 12
+          },
+          {
+            "name": "./node_modules/fbjs/lib/isTextNode.js",
+            "size": 479,
+            "id": 13
+          },
+          {
+            "name": "./node_modules/fbjs/lib/isNode.js",
+            "size": 702,
+            "id": 14
+          },
+          {
+            "name": "./node_modules/fbjs/lib/focusNode.js",
+            "size": 578,
+            "id": 15
+          },
+          {
+            "name": "./node_modules/fbjs/lib/getActiveElement.js",
+            "size": 912,
+            "id": 16
+          },
+          {
+            "name": "./node_modules/style-loader/lib/urls.js",
+            "size": 3008,
+            "id": 22
+          },
+          {
+            "name": "./node_modules/css-loader/lib/css-base.js",
+            "size": 2260,
+            "id": 23
+          },
+          {
+            "name": "./node_modules/style-loader/lib/addStyles.js",
+            "size": 9415,
+            "id": 24
+          }
+        ]
+      },
+      {
+        "size": 0,
+        "files": [
+          "./svgSprite/images.svg"
+        ],
+        "modules": []
+      }
+    ],
+    "pureCssSize": 366,
+    "unPureCssSize": 309
+  }
+]

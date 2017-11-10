@@ -1,6 +1,7 @@
 const merge = require('webpack-merge');
 const PATHS = require('./paths');
 const glob = require('glob');
+const path = require('path');
 
 const { 
     bundleMonitor,
@@ -23,8 +24,10 @@ module.exports = merge([
         }
     },
     sourceMap({ sourceMapType: 'source-map' }),
-    cleaner(),
-    enviromentVariable(),
+    cleaner(PATHS.cleanerPaths, {
+        root: path.resolve(__dirname , '/'),
+    }),
+    enviromentVariable({ 'process.env.NODE_ENV': JSON.stringify('production') }),
     chunkSplitter([
         {
             name: 'vendor',
@@ -47,5 +50,5 @@ module.exports = merge([
         'sass-loader'
     ]}),
     cssMinify({ paths: glob.sync(`${PATHS.appFolder}/**/*.js`) }),
-    bundleMonitor()
+    bundleMonitor({ target: '../monitor/myStatsStore.json', launch: true})
 ]);

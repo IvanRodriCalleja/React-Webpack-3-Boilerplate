@@ -1,12 +1,12 @@
 const WebpackMonitor = require('webpack-monitor')
 
-module.exports = () => ({
+module.exports = ({ target, launch, port = 3000}) => ({
     plugins: [
         new WebpackMonitor({
             capture: true,
-            target: './monitor/myStatsStore.json',
-            launch: true,
-            port: 8081,
+            target,
+            launch,
+            port
         })
     ]
 })

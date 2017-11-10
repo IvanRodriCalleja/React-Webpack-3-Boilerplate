@@ -1,9 +1,10 @@
 const FontminPlugin = require('fontmin-webpack')
 
-module.exports = () => ({
+module.exports = (glyphs = []) => ({
     plugins: [
         new FontminPlugin({
             autodetect: true,
-          }) 
+            glyphs
+        }) 
     ]
 })

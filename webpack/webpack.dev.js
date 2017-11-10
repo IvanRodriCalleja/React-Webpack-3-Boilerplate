@@ -8,7 +8,7 @@ module.exports = merge([
             app: [PATHS.appFolder ]       
         }
     },
-    devServer(),
+    devServer({ stats: 'errors-only', open: true }),
     hotModuleLoader(),
     sourceMap({ sourceMapType: 'cheap-module-eval-source-map' }),
     cssLoader()

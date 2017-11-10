@@ -1,7 +1,12 @@
 const webpack = require('webpack')
 
-module.exports = () => ({
+module.exports = ({ include, exclude} = {}) => ({
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin({
+            include,
+            exclude,
+            parallel: true,
+            sourceMap: true
+        })
     ]
 })

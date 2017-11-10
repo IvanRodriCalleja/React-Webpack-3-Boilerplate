@@ -1,11 +1,10 @@
-const PATHS = require('../../paths');
-
-module.exports = () => ({
+module.exports = ({ include, exclude } = {}) => ({
     module: {
         rules: [
             {
+                include,
+                exclude,
                 test: /\.scss$/,
-                include: PATHS.appFolder,
                 enforce: 'pre',
                 loader: 'postcss-loader',
                 options: {
